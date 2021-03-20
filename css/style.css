@@ -25,6 +25,7 @@ body {
   background-position: top right 20%;
 }
 .container {
+  width: 95%;
   max-width: 1140px;
   margin: auto;
 }
@@ -44,6 +45,7 @@ body {
   margin-right: 24px;
   color: #ffffff;
 }
+
 .social-link {
   margin-left: 20px;
   text-decoration: none;
@@ -133,7 +135,6 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   padding: 13px;
-  margin-right: 30px;
 }
 .card-subtile {
   font-size: 10px;
@@ -169,7 +170,7 @@ body {
   background-color: transparent;
   position: absolute;
   top: 50%;
-  right: -32px;
+  right: -30px;
 }
 .swiper-container {
   max-width: 420px;
@@ -196,4 +197,124 @@ body {
 .footer-link {
   text-decoration: none;
   color: #727174;
+  margin-left: 25px;
+}
+.menu-button {
+  display: none;
+}
+.header-active {
+  display: none;
+}
+@media (max-width: 768px) {
+  .play {
+    display: none;
+  }
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-link:first-child {
+    margin-left: 0;
+  }
+  .copyright {
+    display: block;
+    margin-bottom: 8px;
+  }
+}
+@media (max-width: 540px) {
+  .menu-button {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 35px;
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  .menu-button::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    margin-top: -7px;
+    transition: transform 0.2s;
+  }
+  .menu-button::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    margin-top: 7px;
+    transition: transform 0.2s;
+  }
+  .menu-button-active {
+    height: 0;
+  }
+  .menu-button-active::before {
+    transform: rotate(45deg);
+    margin-top: 0;
+  }
+  .menu-button-active::after {
+    transform: rotate(-45deg);
+    margin-top: 0;
+  }
+  .header {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #9d2929;
+    width: 250px;
+    padding-bottom: 40px;
+    padding-top: 60px;
+    margin-top: 0;
+  }
+  .header-active {
+    display: flex;
+  }
+  .logo {
+    margin-bottom: 25px;
+  }
+  .menu-list {
+    margin: auto;
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu-link {
+    margin-right: 0;
+    margin-bottom: 17px;
+  }
+  .social {
+    order: 1;
+    margin-bottom: 22px;
+    width: 80%;
+  }
+  .social-link:first-child {
+    margin-left: 0;
+  }
+  .swiper-container {
+    width: 80%;
+  }
+  .main-content {
+    margin-top: 190px;
+  }
+  .main-title {
+    font-size: 56px;
+  }
+  .series {
+    max-width: 400px;
+  }
 }
