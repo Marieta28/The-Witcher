@@ -316,4 +316,7 @@ body {
   .series {
     max-width: 400px;
   }
+  .arrow {
+    right: 20px;
+  }
 }
