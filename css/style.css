@@ -58,14 +58,19 @@ body {
 .ganre {
   margin-bottom: 16px;
   display: block;
+  animation-delay: 0.1s;
 }
 .rating {
   display: flex;
   align-items: center;
 }
+.rating-stars {
+  animation-delay: 0.2s;
+}
 .rating-number {
   margin-left: 10px;
   font-size: 12px;
+  animation-delay: 0.3s;
 }
 .main-title {
   font-family: "MasonChronicles", serif;
@@ -74,14 +79,17 @@ body {
   line-height: 89px;
   margin-top: 10px;
   margin-bottom: 10px;
+  animation-delay: 0.5s;
 }
 .main-description {
   max-width: 458px;
   font-size: 14px;
   line-height: 150%;
   font-weight: 400;
+  animation-delay: 0.6s;
 }
 .button {
+  display: inline-block;
   color: #fff;
   font-size: 14px;
   line-height: 16.41px;
@@ -93,7 +101,12 @@ body {
   border: none;
   border-radius: 8px;
   background: #9d2929;
+  text-decoration: none;
   margin-top: 40px;
+  animation-delay: 1s;
+}
+.button:active {
+  color: #fff;
 }
 .play {
   width: 100px;
@@ -103,6 +116,10 @@ body {
   border: none;
   position: relative;
   margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: pulse 1s ease-in-out 0.5s infinite;
 }
 .play::before {
   content: "";
@@ -114,6 +131,7 @@ body {
   border-radius: 50%;
   left: -16px;
   top: -16px;
+  animation: pulse 2s ease-in-out 1s infinite;
 }
 .play-image {
   position: relative;
@@ -135,6 +153,7 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   padding: 13px;
+  animation-delay: 2s;
 }
 .card-subtile {
   font-size: 10px;
@@ -171,6 +190,7 @@ body {
   position: absolute;
   top: 50%;
   right: -30px;
+  animation-delay: 3s;
 }
 .swiper-container {
   max-width: 420px;
@@ -182,6 +202,7 @@ body {
   background: #141218;
   height: 60px;
   padding: 20px 0;
+  animation-delay: 3s;
 }
 .footer-content {
   display: flex;
@@ -285,6 +306,7 @@ body {
   }
   .logo {
     margin-bottom: 25px;
+    animation-delay: 0.8s;
   }
   .menu-list {
     margin: auto;
@@ -292,6 +314,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation-delay: 0.3s;
   }
   .menu-link {
     margin-right: 0;
@@ -300,6 +323,7 @@ body {
   .social {
     order: 1;
     margin-bottom: 22px;
+    animation-delay: 0.5s;
   }
   .social-link:first-child {
     margin-left: 0;
