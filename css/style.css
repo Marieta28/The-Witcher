@@ -222,6 +222,7 @@ body {
 }
 .menu-button {
   display: none;
+  animation-delay: 0.4s;
 }
 .header-active {
   display: none;
